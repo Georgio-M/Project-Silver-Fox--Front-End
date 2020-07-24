@@ -11,7 +11,7 @@ class Home extends Component {
                     <Carousel.Item>
                         <img
                             className={"home-image"}
-                            src="./images/Veteran1.jpeg"
+                            src="./images/banner2.jpg"
                             alt="First Slide"
                         />
                         <Carousel.Caption>
@@ -22,7 +22,7 @@ class Home extends Component {
                     <Carousel.Item className={"bs-carousel-item"}>
                         <img
                             className="home-image"
-                            src="./images/Veteran2.jpeg"
+                            src="./images/banner1.jpg"
                             alt="Third slide"
                         />
 
@@ -34,7 +34,7 @@ class Home extends Component {
                     <Carousel.Item>
                         <img
                             className="home-image"
-                            src="./images/Veteran3.jpeg"
+                            src="./images/flag.jpg"
                             alt="Third slide"
                         />
 
