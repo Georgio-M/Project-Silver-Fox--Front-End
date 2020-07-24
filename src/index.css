@@ -16,8 +16,17 @@ code {
   color: white;
 }
 
-.color-text{
+.header-color-text{
   color: white;
+}
+.header-color-text-donate{
+  color: maroon;
+}
+.header-color-text:hover{
+  color:black;
+}
+.header-color-text-donate:hover{
+  color:black;
 }
 .home-carosuel{
   background-color: orange;
@@ -27,6 +36,5 @@ code {
 
 .home-image{
   width: 100%;
-  height:400px;
-
+  height:350px;
 }
