@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Home from "./Home";
+
 import * as serviceWorker from './serviceWorker';
 import Header from "./Components/header/Header";
 
@@ -8,6 +10,7 @@ import Header from "./Components/header/Header";
 ReactDOM.render(
   <React.StrictMode>
     <Header />
+    <Home/>
   </React.StrictMode>,
   document.getElementById('root')
 );

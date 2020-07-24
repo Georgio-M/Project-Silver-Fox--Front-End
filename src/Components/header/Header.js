@@ -10,7 +10,7 @@ class Header extends Component {
                 LOGO IS FOUND */}
 
                 <Navbar bg="dark" variant="dark">
-                    <Navbar.Brand href="/header">
+                    <Navbar.Brand href="/">
                         <img
                             alt="VFW"
                             src="./images/vfw.png"
@@ -24,7 +24,7 @@ class Header extends Component {
             {/* THIS AREA HOUSES THE LINKS TO THE OTHER PAGES.*/}
                 <Nav className="justify-content-end" activeKey="/home">
                     <Nav.Item>
-                        <Nav.Link href="/home">Active</Nav.Link>
+                        <Nav.Link href="/home" className={"color-text"}>Active</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link eventKey="link-1">Link</Nav.Link>
