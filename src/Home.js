@@ -7,10 +7,10 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Carousel>
+                <Carousel className={""}>
                     <Carousel.Item>
                         <img
-                            className={""}
+                            className={"home-image"}
                             src="./images/Veteran1.jpeg"
                             alt="First Slide"
                         />
@@ -21,7 +21,7 @@ class Home extends Component {
                     </Carousel.Item>
                     <Carousel.Item className={"bs-carousel-item"}>
                         <img
-                            className="d-block w-100"
+                            className="home-image"
                             src="./images/Veteran2.jpeg"
                             alt="Third slide"
                         />
@@ -33,7 +33,7 @@ class Home extends Component {
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
-                            className="d-block w-100"
+                            className="home-image"
                             src="./images/Veteran3.jpeg"
                             alt="Third slide"
                         />

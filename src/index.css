@@ -19,7 +19,15 @@ code {
 .color-text{
   color: white;
 }
+.home-carosuel{
+  background-color: orange;
+  width: 500px;
+  height: 550px;
+}
 
- .carousel{
-
- }
+.home-image{
+  width: 90%;
+  height:400px;
+  padding-left: 10%;
+  padding-top: 35px;
+}
