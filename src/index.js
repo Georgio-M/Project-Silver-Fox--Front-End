@@ -2,15 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from "./Components/home/Home";
-
 import * as serviceWorker from './serviceWorker';
 import Header from "./Components/header/Header";
+import Footer from "./Components/footer/Footer";
+import Login from "./Components/login/Login";
 
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
     <Home/>
+    <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
 );

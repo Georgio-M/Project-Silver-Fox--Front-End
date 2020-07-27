@@ -20,7 +20,7 @@ code {
   color: white;
 }
 .header-color-text-donate{
-  color: maroon;
+  color: #991A1E;
 }
 .header-color-text:hover{
   color:black;
@@ -28,13 +28,99 @@ code {
 .header-color-text-donate:hover{
   color:black;
 }
-.home-carosuel{
-  background-color: orange;
-  width: 500px;
-  height: 550px;
+.header-fixed{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.carosuel-2{
+  width: 50%;
+  height: 50%;
+  padding-top: 30px;
 }
 
 .home-image{
   width: 100%;
   height:350px;
+}
+.banner1{
+  width: 50%;
+  height: 50%;
+  padding-top: 30px;
+
+  margin-right: 50%;
+  margin-left: 25%;
+
+}
+
+.figure-homepage{
+  padding-top: 30px;
+  width: 100px;
+  height: 100px;
+  align-content: normal;
+}
+.align-text{
+  padding-top: 20%;
+  text-align: center;
+  padding-left: 8%;
+  color: white;
+}
+.size{
+  width: 100%;
+  height: auto;
+
+}
+.container{
+
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.container:hover{
+  font-size: 0;
+}
+.size:hover{
+  opacity: 40%;
+  background-color: #282c34;
+/*to changr color opacity and transition-duration
+for size change on hover use transform scale 2 for twice size and .5 for smaller and transition duration time*/
+}
+.mailGroup-Divider{
+  padding-top: 1px;
+  background-color: #A79055;
+  color: white;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.mailGroup{
+  padding: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+  justify-content: center;
+}
+.btn-color{
+  color: #991A1E;
+  background-color: #991A1E;
+}
+.footer{
+  background-color: black;
+  color: white;
+}
+.footer-image{
+  justify-content: center;
+  margin-right: 50%;
+  margin-left: 32%;
+  padding-top: 10px;
+}
+.cards{
+  padding-top: 20px;
+  justify-items: auto;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 30px;
+}
+.cards-transition:hover{
+  transform: scale(1.070);
+  transition-duration: .5s;
 }

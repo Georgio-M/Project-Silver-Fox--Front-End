@@ -9,7 +9,7 @@ class Header extends Component {
                 {/* HEADER AREA WHERE VFW
                 LOGO IS FOUND */}
 
-                <Navbar bg="dark" variant="dark">
+                <Navbar bg="dark" variant="test" className={"test"}>
                     <Navbar.Brand href="/">
                         <img
                             alt="VFW"
@@ -21,10 +21,12 @@ class Header extends Component {
 
                     </Navbar.Brand>
                 </Navbar>
+
             {/* THIS AREA HOUSES THE LINKS TO THE OTHER PAGES.*/}
-                <Nav className="justify-content-end" activeKey="/home">
+
+                <Nav className="justify-content-end" activeKey="/home" >
                     <Nav.Item>
-                        <Nav.Link href="/home" className={"header-color-text"}>Log In</Nav.Link>
+                        <Nav.Link href="/Login" className={"header-color-text"}>Log In</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link eventKey="link-1" className={"header-color-text"}>Register</Nav.Link>
@@ -38,6 +40,7 @@ class Header extends Component {
                 </Nav>
 
             </div>
+
         );
     }
 }
