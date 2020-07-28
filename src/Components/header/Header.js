@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import About from "../about/About";
 
 class Header extends Component {
     render() {
@@ -34,6 +33,9 @@ class Header extends Component {
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link href={"/events"} className={"header-color-text"}>Events</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link href={"/contactus"} className={"header-color-text"}>Contact Us</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link eventKey="disabled" className={"header-color-text-donate"}> Donate</Nav.Link>

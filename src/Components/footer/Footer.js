@@ -5,7 +5,7 @@ class Footer extends Component {
     render() {
         return (
             <div className={"footer"}>
-                <img src={"./images/vfw-logo2.png"} className={"footer-image"}/>
+                <img src={"./images/vfw-logo2.png"} className={"footer-image"} alt={"National VFW Organization"}/>
 
                 <Nav className="justify-content-left" activeKey="/home" >
                     <Nav.Item>

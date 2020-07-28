@@ -34,7 +34,6 @@ class Home extends Component {
                             src="./images/banner1.jpg"
                             alt="Third slide"
                         />
-
                         <Carousel.Caption>
                             <h3></h3>
                             <p></p>
@@ -62,12 +61,16 @@ class Home extends Component {
                 <div className={"container"}>
                         <Row>
                         <Col>
-                    <Image src="./images/postPride.jpg"  rounded className={"size"}/>
-                    <link href={"/about"}/>
-                    <h2>About Post 4321</h2>
+                            <a href={"/contactus"}>
+                    <Image src="./images/postPride.jpg"  rounded className={"size"} href={"home"}/>
+                            </a>
+
+                    <h2>Contact Post 4321</h2>
                         </Col>
                             <Col >
+                                <a href={"events"}>
                     <Image src={"./images/events.jpg"} rounded className={"size"}/>
+                                </a>
                     <h2>Events</h2>
                             </Col>
                         </Row>
@@ -89,7 +92,7 @@ class Home extends Component {
                                 <Form.Control type="email" placeholder="Email" />
                             </Form.Group>
                             <Form.Group as={Col} controlId="formGridPassword">
-                                <Form.Control type="number" placeholder="Phone Number" />
+                                <Form.Control type="tel" placeholder="Phone Number" />
                             </Form.Group>
                         </Form.Row>
                         <style type={"text/css"}>
