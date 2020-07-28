@@ -105,10 +105,11 @@ for size change on hover use transform scale 2 for twice size and .5 for smaller
   color: white;
 }
 .footer-image{
-  justify-content: center;
-  margin-right: 50%;
-  margin-left: 32%;
-  padding-top: 10px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 35%;
+  padding-top: 20px;
 }
 .cards{
   padding-top: 20px;
@@ -146,15 +147,51 @@ for size change on hover use transform scale 2 for twice size and .5 for smaller
   align-content: normal;
   margin-right: 7%;
 }
+/* TODO find a way to have page size adjust without showing white only on one side*/
 .html,body
 {
   width: 100%;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  font-family: Arial;
+  max-width: 2000px;
+  margin: auto;
+
 }
 .card-img{
   height: 250px;
   width: 250px;
+}
+.contactus-cards{
+  margin: 3%;
+  padding: 3%;
+}
+.post-hours{
+  padding-top: 5px;
+  width: 28%;
+  height: 325px;
+  margin-left: 60px;
+  margin-bottom: 40px;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  outline-style: solid;
+  outline-color: #A79055;
+  background-color: lightgrey;
+}
+.contactus-header{
+  text-align: center;
+  color: #991A1E;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+.events-container{
+  background-color: lightgrey;
+  margin: 30px;
+}
+.test2{
+
 }
 

@@ -117,7 +117,7 @@ class Home extends Component {
                                 <Card className={"cards-transition"}>
                                     <Card.Img variant="top" src="./images/post4321-children.jpg" />
                                     <Card.Body>
-                                        <Card.Title>Card title</Card.Title>
+                                        <Card.Title>VFW and the Boy Scouts of America</Card.Title>
                                         <Card.Text>
                                             This is a wider card with supporting text below as a natural lead-in to
                                             additional content. This content is a little bit longer.
@@ -127,7 +127,7 @@ class Home extends Component {
                                 <Card className={"cards-transition"}>
                                     <Card.Img variant="top" src="./images/post4321-recipient.jpg" />
                                     <Card.Body>
-                                        <Card.Title>Card title</Card.Title>
+                                        <Card.Title>VFW On Your Side</Card.Title>
                                         <Card.Text>
                                             This card has supporting text below as a natural lead-in to additional
                                             content.{' '}
@@ -137,7 +137,7 @@ class Home extends Component {
                                 <Card className={"cards-transition"}>
                                     <Card.Img variant="top" src="./images/post4321-members.jpg" />
                                     <Card.Body>
-                                        <Card.Title>Card title</Card.Title>
+                                        <Card.Title>Post 4321 BBQ</Card.Title>
                                         <Card.Text>
                                             This is a wider card with supporting text below as a natural lead-in to
                                             additional content. This card has even longer content than the first to
