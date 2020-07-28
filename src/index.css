@@ -124,3 +124,15 @@ for size change on hover use transform scale 2 for twice size and .5 for smaller
   transform: scale(1.070);
   transition-duration: .5s;
 }
+.bg{
+  background-color: black;
+}
+.join-color{
+  color: white;
+}
+.join-color:hover{
+  color: #A79055;
+}
+.carosuel-color2{
+  color: black;
+}

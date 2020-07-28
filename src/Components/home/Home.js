@@ -16,16 +16,16 @@ class Home extends Component {
             <>
             <div>
                 {/*TODO time permitting, resize photos in affinity for sharper images*/}
-                <Carousel className={""}>
-                    <Carousel.Item>
+                <Carousel>
+                    <Carousel.Item >
                         <img
                             className={"home-image"}
-                            src="./images/banner2.jpg"
+                            src="./images/flag.jpg"
                             alt="First Slide"
                         />
-                        <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <Carousel.Caption className={"carosuel-color2"}>
+                            <h1>Welcome to Post 4321</h1>
+                            <p>2010 W Morrison Ave, Tampa, FL 33606</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item className={"bs-carousel-item"}>
@@ -36,20 +36,20 @@ class Home extends Component {
                         />
 
                         <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3></h3>
+                            <p></p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="home-image"
-                            src="./images/flag.jpg"
+                            src="./images/banner2.jpg"
                             alt="Third slide"
                         />
 
                         <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h3></h3>
+                            <p></p>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
@@ -63,6 +63,7 @@ class Home extends Component {
                         <Row>
                         <Col>
                     <Image src="./images/postPride.jpg"  rounded className={"size"}/>
+                    <link href={"/about"}/>
                     <h2>About Post 4321</h2>
                         </Col>
                             <Col >
@@ -88,7 +89,7 @@ class Home extends Component {
                                 <Form.Control type="email" placeholder="Email" />
                             </Form.Group>
                             <Form.Group as={Col} controlId="formGridPassword">
-                                <Form.Control type="zip" placeholder="Zip Code" />
+                                <Form.Control type="number" placeholder="Phone Number" />
                             </Form.Group>
                         </Form.Row>
                         <style type={"text/css"}>

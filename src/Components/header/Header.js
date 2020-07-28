@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import About from "../about/About";
 
 class Header extends Component {
     render() {
@@ -10,7 +11,7 @@ class Header extends Component {
                 LOGO IS FOUND */}
 
                 <Navbar bg="dark" variant="test" className={"test"}>
-                    <Navbar.Brand href="/">
+                    <Navbar.Brand href="/home">
                         <img
                             alt="VFW"
                             src="./images/vfw.png"
@@ -24,15 +25,15 @@ class Header extends Component {
 
             {/* THIS AREA HOUSES THE LINKS TO THE OTHER PAGES.*/}
 
-                <Nav className="justify-content-end" activeKey="/home" >
+                <Nav className="justify-content-end" activeKey="" >
                     <Nav.Item>
-                        <Nav.Link href="/Login" className={"header-color-text"}>Log In</Nav.Link>
+                        <Nav.Link href="https://www.vfw.org/join" className={"join-color"}>Join</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-1" className={"header-color-text"}>Register</Nav.Link>
+                        <Nav.Link  href={"/about"} className={"header-color-text"}>About</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-2" className={"header-color-text"}>Events</Nav.Link>
+                        <Nav.Link href={"/events"} className={"header-color-text"}>Events</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link eventKey="disabled" className={"header-color-text-donate"}> Donate</Nav.Link>
