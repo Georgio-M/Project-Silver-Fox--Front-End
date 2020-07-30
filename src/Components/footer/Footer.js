@@ -7,7 +7,7 @@ class Footer extends Component {
             <div className={"footer"}>
                 <img src={"./images/vfw-logo2.png"} className={"footer-image"} alt={"National VFW Organization"}/>
 
-                <Nav className="justify-content-left" activeKey="/home" >
+                <Nav className="justify-content-left" activeKey="/home">
                     <Nav.Item>
                         <Nav.Link href="/home" className={"footer"}>Active</Nav.Link>
                     </Nav.Item>

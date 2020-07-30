@@ -11,14 +11,14 @@ class ContactUs extends Component {
                 <div>
                     <img src="./images/banner2.jpg" fluid alt={"contact us"} className={"home-image"}/>
                 </div>
-            <div>
-                <h1 className={"contactus-header"}>Contact Post 4321</h1>
-            </div>
+                <div>
+                    <h1 className={"contactus-header"}>Contact Post 4321</h1>
+                </div>
 
                 <div className={"row"}>
-                    <div className={"post-hours"} >
+                    <div className={"post-hours"}>
                         <u>
-                            <h3 >Post Hours</h3>
+                            <h3>Post Hours</h3>
                         </u>
                         <dl>
                             <dt> Monday</dt>
@@ -106,7 +106,7 @@ class ContactUs extends Component {
                     </Card>
                 </CardDeck>
 
-                </div>
+            </div>
         );
     }
 }

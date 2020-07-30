@@ -12,87 +12,88 @@ import CardDeck from "react-bootstrap/CardDeck";
 
 class Home extends Component {
     render() {
-            return (
+        return (
             <>
-            <div>
-                {/*TODO time permitting, resize photos in affinity for sharper images*/}
-                <Carousel>
-                    <Carousel.Item >
-                        <img
-                            className={"home-image"}
-                            src="./images/flag.jpg"
-                            alt="First Slide"
-                        />
-                        <Carousel.Caption className={"carosuel-color2"}>
-                            <h1>Welcome to Post 4321</h1>
-                            <p>2010 W Morrison Ave, Tampa, FL 33606</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item className={"bs-carousel-item"}>
-                        <img
-                            className="home-image"
-                            src="./images/banner1.jpg"
-                            alt="Third slide"
-                        />
-                        <Carousel.Caption>
-                            <h3></h3>
-                            <p></p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="home-image"
-                            src="./images/banner2.jpg"
-                            alt="Third slide"
-                        />
+                <div>
+                    {/*TODO time permitting, resize photos in affinity for sharper images*/}
+                    <Carousel>
+                        <Carousel.Item>
+                            <img
+                                className={"home-image"}
+                                src="./images/flag.jpg"
+                                alt="First Slide"
+                            />
+                            <Carousel.Caption className={"carosuel-color2"}>
+                                <h1>Welcome to Post 4321</h1>
+                                <p>2010 W Morrison Ave, Tampa, FL 33606</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item className={"bs-carousel-item"}>
+                            <img
+                                className="home-image"
+                                src="./images/banner1.jpg"
+                                alt="Third slide"
+                            />
+                            <Carousel.Caption>
+                                <h3></h3>
+                                <p></p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="home-image"
+                                src="./images/banner2.jpg"
+                                alt="Third slide"
+                            />
 
-                        <Carousel.Caption>
-                            <h3></h3>
-                            <p></p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-            {/* TODO update about post and events icons below. Icons need to show text when hovering over them the title and a small blurb*/}
-            </div>
+                            <Carousel.Caption>
+                                <h3></h3>
+                                <p></p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                    {/* TODO update about post and events icons below. Icons need to show text when hovering over them the title and a small blurb*/}
+                </div>
                 <div data-hover={"test"}>
-                    <img src={"./images/banner-noOneDoesMore.png"} className={"banner1"} alt={"No one does more banner"}/>
+                    <img src={"./images/banner-noOneDoesMore.png"} className={"banner1"}
+                         alt={"No one does more banner"}/>
                 </div>
 
                 <div className={"container"}>
-                        <Row>
+                    <Row>
                         <Col>
                             <a href={"/contactus"}>
-                    <Image src="./images/postPride.jpg"  rounded className={"size"} href={"home"}/>
+                                <Image src="./images/postPride.jpg" rounded className={"size"} href={"home"}/>
                             </a>
 
-                    <h2>Contact Post 4321</h2>
+                            <h2>Contact Post 4321</h2>
                         </Col>
-                            <Col >
-                                <a href={"events"}>
-                    <Image src={"./images/events.jpg"} rounded className={"size"}/>
-                                </a>
-                    <h2>Events</h2>
-                            </Col>
-                        </Row>
+                        <Col>
+                            <a href={"events"}>
+                                <Image src={"./images/events.jpg"} rounded className={"size"}/>
+                            </a>
+                            <h2>Events</h2>
+                        </Col>
+                    </Row>
                 </div>
                 <div className={"mailGroup-Divider"}>
                     <h2>Join Our Mailing List</h2>
                     <Form className={"mailGroup"}>
                         <Form.Row>
                             <Form.Group as={Col} controlId="formGridEmail">
-                                <Form.Control type="text" placeholder="First Name" />
+                                <Form.Control type="text" placeholder="First Name"/>
                             </Form.Group>
 
                             <Form.Group as={Col} controlId="formGridPassword">
-                                <Form.Control type="text" placeholder="Last Name" />
+                                <Form.Control type="text" placeholder="Last Name"/>
                             </Form.Group>
                         </Form.Row>
                         <Form.Row>
                             <Form.Group as={Col} controlId="formGridEmail">
-                                <Form.Control type="email" placeholder="Email" />
+                                <Form.Control type="email" placeholder="Email"/>
                             </Form.Group>
                             <Form.Group as={Col} controlId="formGridPassword">
-                                <Form.Control type="tel" placeholder="Phone Number" />
+                                <Form.Control type="tel" placeholder="Phone Number"/>
                             </Form.Group>
                         </Form.Row>
                         <style type={"text/css"}>
@@ -112,45 +113,45 @@ class Home extends Component {
                 <div/>
                 {/*Cards begin here*/}
                 <div className={"cards"}>
-                        <Row>
-                            <CardDeck>
-                                <Card className={"cards-transition"}>
-                                    <Card.Img variant="top" src="./images/post4321-children.jpg" />
-                                    <Card.Body>
-                                        <Card.Title>VFW and the Boy Scouts of America</Card.Title>
-                                        <Card.Text>
-                                            This is a wider card with supporting text below as a natural lead-in to
-                                            additional content. This content is a little bit longer.
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card className={"cards-transition"}>
-                                    <Card.Img variant="top" src="./images/post4321-recipient.jpg" />
-                                    <Card.Body>
-                                        <Card.Title>VFW On Your Side</Card.Title>
-                                        <Card.Text>
-                                            This card has supporting text below as a natural lead-in to additional
-                                            content.{' '}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                                <Card className={"cards-transition"}>
-                                    <Card.Img variant="top" src="./images/post4321-members.jpg" />
-                                    <Card.Body>
-                                        <Card.Title>Post 4321 BBQ</Card.Title>
-                                        <Card.Text>
-                                            This is a wider card with supporting text below as a natural lead-in to
-                                            additional content. This card has even longer content than the first to
-                                            show that equal height action.
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            </CardDeck>
-                        </Row>
+                    <Row>
+                        <CardDeck>
+                            <Card className={"cards-transition"}>
+                                <Card.Img variant="top" src="./images/post4321-children.jpg"/>
+                                <Card.Body>
+                                    <Card.Title>VFW and the Boy Scouts of America</Card.Title>
+                                    <Card.Text>
+                                        This is a wider card with supporting text below as a natural lead-in to
+                                        additional content. This content is a little bit longer.
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                            <Card className={"cards-transition"}>
+                                <Card.Img variant="top" src="./images/post4321-recipient.jpg"/>
+                                <Card.Body>
+                                    <Card.Title>VFW On Your Side</Card.Title>
+                                    <Card.Text>
+                                        This card has supporting text below as a natural lead-in to additional
+                                        content.{' '}
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                            <Card className={"cards-transition"}>
+                                <Card.Img variant="top" src="./images/post4321-members.jpg"/>
+                                <Card.Body>
+                                    <Card.Title>Post 4321 BBQ</Card.Title>
+                                    <Card.Text>
+                                        This is a wider card with supporting text below as a natural lead-in to
+                                        additional content. This card has even longer content than the first to
+                                        show that equal height action.
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </CardDeck>
+                    </Row>
 
                 </div>
 
-                </>
+            </>
         );
     }
 }

@@ -1,196 +1,227 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.justify-content-end{
-  background-color:lightgray;
-  color: white;
+
+.justify-content-end {
+    background-color: lightgray;
+    color: white;
 }
 
-.header-color-text{
-  color: white;
-}
-.header-color-text-donate{
-  color: #991A1E;
-}
-.header-color-text:hover{
-  color:black;
-}
-.header-color-text-donate:hover{
-  color:black;
-}
-.header-fixed{
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.carosuel-2{
-  width: 50%;
-  height: 50%;
-  padding-top: 30px;
+.header-color-text {
+    color: white;
 }
 
-.home-image{
-  width: 100%;
-  height: 350px;
-}
-.banner1{
-  width: 50%;
-  height: 50%;
-  padding-top: 30px;
-  margin-right: 50%;
-  margin-left: 25%;
+.header-color-text-donate {
+    color: #991A1E;
 }
 
-.figure-homepage{
-  padding-top: 30px;
-  width: 100px;
-  height: 100px;
-  align-content: normal;
+.header-color-text:hover {
+    color: black;
 }
-.align-text{
-  padding-top: 20%;
-  text-align: center;
-  padding-left: 8%;
-  color: white;
+
+.header-color-text-donate:hover {
+    color: black;
 }
-.size{
-  width: 100%;
-  height: 90%;
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.carosuel-2 {
+    width: 50%;
+    height: 50%;
+    padding-top: 30px;
+}
+
+.home-image {
+    width: 100%;
+    height: 350px;
+}
+
+.banner1 {
+    width: 50%;
+    height: 50%;
+    padding-top: 30px;
+    margin-right: 50%;
+    margin-left: 25%;
+}
+
+.figure-homepage {
+    padding-top: 30px;
+    width: 100px;
+    height: 100px;
+    align-content: normal;
+}
+
+.align-text {
+    padding-top: 20%;
+    text-align: center;
+    padding-left: 8%;
+    color: white;
+}
+
+.size {
+    width: 100%;
+    height: 90%;
 
 }
-.container{
 
-  text-align: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
+.container {
+
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
-.container:hover{
-  font-size: 0;
+
+.container:hover {
+    font-size: 0;
 }
-.size:hover{
-  opacity: 40%;
-  background-color: #282c34;
-/*to changr color opacity and transition-duration
-for size change on hover use transform scale 2 for twice size and .5 for smaller and transition duration time*/
+
+.size:hover {
+    opacity: 40%;
+    background-color: #282c34;
+    /*to changr color opacity and transition-duration
+    for size change on hover use transform scale 2 for twice size and .5 for smaller and transition duration time*/
 }
-.mailGroup-Divider{
-  padding-top: 1px;
-  background-color: #A79055;
-  color: white;
-  text-align: center;
-  padding-bottom: 5px;
+
+.mailGroup-Divider {
+    padding-top: 1px;
+    background-color: #A79055;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
 }
-.mailGroup{
-  padding: 10px;
-  margin-left: 25%;
-  margin-right: 25%;
-  justify-content: center;
+
+.mailGroup {
+    padding: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    justify-content: center;
 }
-.btn-color{
-  color: #991A1E;
-  background-color: #991A1E;
+
+.btn-color {
+    color: #991A1E;
+    background-color: #991A1E;
 }
-.footer{
-  background-color: black;
-  color: white;
+
+.footer {
+    background-color: black;
+    color: white;
 }
-.footer-image{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  width: 35%;
-  padding-top: 20px;
+
+.footer-image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 35%;
+    padding-top: 20px;
 }
-.cards{
-  padding-top: 20px;
-  justify-items: auto;
-  justify-content: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-bottom: 30px;
+
+.cards {
+    padding-top: 20px;
+    justify-items: auto;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 30px;
 }
-.cards-transition:hover{
-  transform: scale(1.070);
-  transition-duration: .5s;
+
+.cards-transition:hover {
+    transform: scale(1.070);
+    transition-duration: .5s;
 }
-.bg{
-  background-color: black;
+
+.bg {
+    background-color: black;
 }
-.join-color{
-  color: white;
+
+.join-color {
+    color: white;
 }
-.join-color:hover{
-  color: #A79055;
+
+.join-color:hover {
+    color: #A79055;
 }
-.carosuel-color2{
-  color: black;
+
+.carosuel-color2 {
+    color: black;
 }
-.about-heading{
-  margin: 20px;
-  text-align: center;
-  color: #A79055;
-  align-content: center;
+
+.about-heading {
+    margin: 20px;
+    text-align: center;
+    color: #A79055;
+    align-content: center;
 }
-.about-body{
-  margin-left: 7%;
-  text-align: left;
-  align-content: normal;
-  margin-right: 7%;
+
+.about-body {
+    margin-left: 7%;
+    text-align: left;
+    align-content: normal;
+    margin-right: 7%;
 }
+
 /* TODO find a way to have page size adjust without showing white only on one side*/
-.html,body {
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-  font-family: Arial;
-  max-width: 2000px;
-  margin: auto;
+.html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: Arial;
+    max-width: 2000px;
+    margin: auto;
 }
 
-.card-img{
-  height: 250px;
-  width: 250px;
+.card-img {
+    height: 250px;
+    width: 250px;
 }
-.contactus-cards{
-  margin: 3%;
-  padding: 3%;
+
+.contactus-cards {
+    margin: 3%;
+    padding: 3%;
 }
-.post-hours{
-  padding-top: 5px;
-  width: 28%;
-  height: 325px;
-  margin-left: 60px;
-  margin-bottom: 40px;
-  align-content: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  outline-style: solid;
-  outline-color: #A79055;
-  background-color: lightgrey;
+
+.post-hours {
+    padding-top: 5px;
+    width: 28%;
+    height: 325px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    outline-style: solid;
+    outline-color: #A79055;
+    background-color: lightgrey;
 }
-.contactus-header{
-  text-align: center;
-  color: #991A1E;
-  padding-bottom: 30px;
-  padding-top: 50px;
+
+.contactus-header {
+    text-align: center;
+    color: #991A1E;
+    padding-bottom: 30px;
+    padding-top: 50px;
 }
-.events-container{
-  background-color: lightgrey;
-  margin: 30px;
+
+.events-container {
+    background-color: lightgrey;
+    margin: 30px;
 }
-.test2{
+
+.test2 {
 
 }
 

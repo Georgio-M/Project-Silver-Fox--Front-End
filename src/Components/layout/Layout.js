@@ -12,7 +12,7 @@ class Layout extends Component {
 
         let routes = (
             <div>
-                <Route component = {Home} path ="/" exact />
+                <Route component={Home} path="/" exact/>
                 <Route component={Home} path={"/home"}/>
                 <Route component={Events} path={"/events"}/>
                 <Route component={About} path={"/about"}/>
@@ -20,13 +20,13 @@ class Layout extends Component {
             </div>
         );
 
-            return(
-                <div>
-                    <Header/>
-                    {routes}
-                    <Footer/>
-                </div>
-            );
+        return (
+            <div>
+                <Header/>
+                {routes}
+                <Footer/>
+            </div>
+        );
 
     }
 }

@@ -22,14 +22,14 @@ class Header extends Component {
                     </Navbar.Brand>
                 </Navbar>
 
-            {/* THIS AREA HOUSES THE LINKS TO THE OTHER PAGES.*/}
+                {/* THIS AREA HOUSES THE LINKS TO THE OTHER PAGES.*/}
 
-                <Nav className="justify-content-end" activeKey="" >
+                <Nav className="justify-content-end" activeKey="">
                     <Nav.Item>
                         <Nav.Link href="https://www.vfw.org/join" className={"join-color"}>Join</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link  href={"/about"} className={"header-color-text"}>About</Nav.Link>
+                        <Nav.Link href={"/about"} className={"header-color-text"}>About</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link href={"/events"} className={"header-color-text"}>Events</Nav.Link>
