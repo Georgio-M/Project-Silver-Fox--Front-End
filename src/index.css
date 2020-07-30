@@ -148,8 +148,7 @@ for size change on hover use transform scale 2 for twice size and .5 for smaller
   margin-right: 7%;
 }
 /* TODO find a way to have page size adjust without showing white only on one side*/
-.html,body
-{
+.html,body {
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -157,8 +156,8 @@ for size change on hover use transform scale 2 for twice size and .5 for smaller
   font-family: Arial;
   max-width: 2000px;
   margin: auto;
-
 }
+
 .card-img{
   height: 250px;
   width: 250px;
