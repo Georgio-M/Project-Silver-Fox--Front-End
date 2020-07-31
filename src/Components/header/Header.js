@@ -26,7 +26,7 @@ class Header extends Component {
 
                 <Nav className="justify-content-end" activeKey="">
                     <Nav.Item>
-                        <Nav.Link href="https://www.vfw.org/join" className={"join-color"}>Join</Nav.Link>
+                        <Nav.Link href="/register" className={"join-color"}>Register</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link href={"/about"} className={"header-color-text"}>About</Nav.Link>
@@ -38,7 +38,7 @@ class Header extends Component {
                         <Nav.Link href={"/contactus"} className={"header-color-text"}>Contact Us</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="disabled" className={"header-color-text-donate"}> Donate</Nav.Link>
+                        <Nav.Link href={"/register"} className={"header-color-text-donate"}> Donate</Nav.Link>
                     </Nav.Item>
                 </Nav>
 
