@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
+import Form from 'react-bootstrap/Form';
+import Button from "react-bootstrap/Button";
+import Col from "react-bootstrap/Col";
+
 
 
 class ContactUs extends Component {
@@ -45,6 +49,61 @@ class ContactUs extends Component {
                             <h3>Phone Number</h3>
                         </u>
                         <p>(813) - 555 - 5555</p>
+                    </div>
+
+                </div>
+
+                <div>
+                    <div className={"mailGroup-Divider"}>
+                        <h2>Contact Post 4321?</h2>
+                        <Form className={"mailGroup"}>
+                            <Form.Row>
+                                <Form.Group as={Col} controlId="formGridEmail">
+                                    <Form.Control type="text" placeholder="First Name"/>
+                                </Form.Group>
+
+                                <Form.Group as={Col} controlId="formGridPassword">
+                                    <Form.Control type="text" placeholder="Last Name"/>
+                                </Form.Group>
+                            </Form.Row>
+                            <Form.Row>
+                                <Form.Group as={Col} controlId="formGridEmail">
+                                    <Form.Control type="email" placeholder="Email"/>
+                                </Form.Group>
+                                <Form.Group as={Col} controlId="formGridPassword">
+                                    <Form.Control type="tel" placeholder="Phone Number"/>
+                                </Form.Group>
+                            </Form.Row>
+                            <Form.Group controlId="exampleForm.ControlTextarea1">
+                                <Form.Control as="textarea" rows="3" placeholder={"How Can Post 4321 Help You?"}/>
+                            </Form.Group>
+
+                            {/*TODO FIND A WAY TO CHANGE THE COLOR OF THE SELECTOR FOR ACTIVE MEMBER*/}
+                            {/*TODO TIME PERMITTING, ADD FUNCTIONALITY TO ENTER MEMBER NUMBER IF ALREADY A MEMBER WHEN SWITCH IS TOGGLED*/}
+                            {/*TODO FIND A WAY TO SEND EMAILS TO AN POST ADMIN EMAIL ADDRESS*/}
+                            {/*TODO HOW TO TRACK MESSAGES IN DATA BASE FOR REPORTING*/}
+
+                            <div className={"select"}>
+                            <Form.Check
+                                type="switch"
+                                id="custom-switch"
+                                label="Active Member"
+                            />
+                            </div>
+
+
+                            <style type={"text/css"}>
+                                {`
+                                .btn-color{
+                                    background-color: #991A1E;
+                                    color: white;
+                            }
+                            `}
+                            </style>
+                            <Button variant="color" size="lg" block>
+                                Contact Us
+                            </Button>
+                        </Form>
                     </div>
 
                 </div>
@@ -105,6 +164,7 @@ class ContactUs extends Component {
                         </Card.Body>
                     </Card>
                 </CardDeck>
+
 
             </div>
         );

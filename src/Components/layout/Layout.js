@@ -10,6 +10,7 @@ import SignUp from "../signup/SignUp";
 import ThankYou from "../thankyou/ThankYou";
 import ErrorPage from "../thankyou/ErrorPage";
 import Profile from "../profile/Profile";
+import {withRouter} from "react-router";
 
 class Layout extends Component {
     render() {
@@ -30,7 +31,7 @@ class Layout extends Component {
 
         return (
             <div>
-                <Header/>
+                <Header {...this.props}/>
                 {routes}
                 <Footer/>
             </div>
@@ -39,4 +40,4 @@ class Layout extends Component {
     }
 }
 
-export default Layout;
+export default withRouter (Layout);

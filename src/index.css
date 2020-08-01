@@ -256,3 +256,11 @@ code {
     height: 35px;
 }
 
+.select{
+    color: white;
+    position: relative;
+    display: inline-block;
+
+}
+
+

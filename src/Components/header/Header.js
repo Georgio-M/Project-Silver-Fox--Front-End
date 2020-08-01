@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React, {Component, useState} from 'react';
 import {Link} from 'react-router-dom'
 import Axios from 'axios';
 import Nav from "react-bootstrap/Nav";
+import Button from "react-bootstrap/Button";
 
 class Header extends Component {
     state = {
@@ -20,8 +21,8 @@ class Header extends Component {
             .then(response => {
                 //store data
                 localStorage.setItem("loggedInUser", response.data.email);
-                this.props.history.push('/profile/');
-            }).catch(error => {});
+                this.props.history.push("/profile")
+            }).catch(error => {console.log(error)});
     }
 
     handleChange =(event) =>{
@@ -40,6 +41,15 @@ class Header extends Component {
         localStorage.removeItem("loggedInUser");
         this.props.history.push("/home");
     }
+    //TODO TIME PERMITTING CREATE A MODAL FOR THE REGISTRATION PROCESS
+    modal=() =>{
+        const [show, setShow] = useState(false);
+        const handleClose = () => setShow(false);
+        const handleShow = () => setShow(true);
+    }
+
+
+
     render() {
 
         let Links = (
@@ -53,6 +63,10 @@ class Header extends Component {
                 <input onChange = {this.handleChange} name = "email" value = {this.state.user.email} className="form" type="text" placeholder="Email" aria-label="Search"/>
                 <input onChange = {this.handleChange} name = "password" value = {this.state.user.password} className="form" type="text" placeholder="Password" aria-label="Search"/>
                 <button onClick ={this.handleSubmit} className="form-button" type="button">Sign In</button>
+                <a href={"/register"}>
+                <button  className="form-button" type="button">Register</button>
+                </a>
+
             </form>
         );
 
@@ -66,6 +80,9 @@ class Header extends Component {
                 </li>
             )
         }
+
+
+
         return (
             <div>
                 {/* HEADER AREA WHERE VFW
@@ -77,9 +94,7 @@ class Header extends Component {
                         <Link to={"/home"}>
                         <img src={"./images/vfw.png"} className={"header-img"} alt={"vfw logo"}/>
                         </Link>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
+
                         <div >
 
                             {signInSignOut}
@@ -89,7 +104,7 @@ class Header extends Component {
                     <div className={"nav-bar"}>
                         <Nav className="justify-content-end" activeKey="">
                             <Nav.Item>
-                                <Nav.Link href="/register" className={"join-color"}>Register</Nav.Link>
+                                <Nav.Link href="/home" className={"join-color"}>Post 4321</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link href={"/about"} className={"header-color-text"}>About</Nav.Link>
@@ -99,9 +114,6 @@ class Header extends Component {
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link href={"/contactus"} className={"header-color-text"}>Contact Us</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link href={"/register"} className={"header-color-text-donate"}> Donate</Nav.Link>
                             </Nav.Item>
                         </Nav>
                     </div>
