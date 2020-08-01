@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom'
 import Axios from 'axios';
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
+import {Col} from "react-bootstrap";
+import Row from "react-bootstrap/Row";
 
 class Header extends Component {
     state = {
@@ -37,6 +39,12 @@ class Header extends Component {
         });
 
     }
+
+    home =() =>{
+        this.props.history.push("/profile");
+    }
+
+
     signOut =() =>{
         localStorage.removeItem("loggedInUser");
         this.props.history.push("/home");
@@ -72,7 +80,15 @@ class Header extends Component {
 
         if(localStorage.getItem("loggedInUser")){
             signInSignOut =(
+                <div>
+                    <Col>
+                        <Row>
                 <button onClick ={this.signOut} className="btn-outline-success" type="button">Sign Out</button>
+                            <button onClick={this.home}>My Profile</button>
+                        </Row>
+                    </Col>
+                </div>
+
             );
             Links =(
                 <li className="nav-item active">

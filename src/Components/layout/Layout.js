@@ -11,6 +11,7 @@ import ThankYou from "../thankyou/ThankYou";
 import ErrorPage from "../thankyou/ErrorPage";
 import Profile from "../profile/Profile";
 import {withRouter} from "react-router";
+import Todo from "../Todo";
 
 class Layout extends Component {
     render() {
@@ -25,19 +26,33 @@ class Layout extends Component {
                 <Route component={ContactUs} path={"/contactus"}/>
                 <Route component={ThankYou} path={"/thankyou"}/>
                 <Route component={ErrorPage} path={"/error"}/>
-                <Route component={Profile} path={"/profile"}/>
+                <Route component={Todo} path={"/test"}/>
             </div>
         );
+
+        if(localStorage.getItem("loggedInUser")){
+            routes = (
+                <div>
+                    <Route component = {Home} path = "/home" />
+                    <Route component={Events} path={"/events"}/>
+                    <Route component={About} path={"/about"}/>
+                    <Route component={ContactUs} path={"/contactus"}/>
+                    <Route component={Todo} path={"/test"}/>
+                    <Route component={Profile} path={"/profile"}/>
+
+                </div>
+            );
+        }
 
         return (
             <div>
                 <Header {...this.props}/>
                 {routes}
+                <Route component = {About} path = "/aboutus" />
                 <Footer/>
             </div>
         );
-
     }
 }
 
-export default withRouter (Layout);
+export default withRouter(Layout);
