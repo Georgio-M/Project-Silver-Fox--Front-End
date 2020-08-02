@@ -18,7 +18,6 @@ class Home extends Component {
         user : {
             firstName: '',
             lastName: '',
-            age: '',
             email:'',
             password: '',
             phone: '',

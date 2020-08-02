@@ -3,8 +3,11 @@ import {Link, Route} from 'react-router-dom';
 import  Axios  from 'axios';
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
+import Modal from "../modal/Modal";
+
+
+
+
 
 
 class Home extends Component {
@@ -36,23 +39,29 @@ class Home extends Component {
         return (
 <>
                             <div>
-                                <h1 className="h2">{this.state.user.firstName}'s Profile</h1>
+                                <h1 className="h2">Hey {this.state.user.firstName}</h1>
                             </div>
             <div>
                 <Col>
                     <Row>
                 Name: {this.state.user.firstName} {this.state.user.lastName}
-
                 </Row>
+                    <Row>
+                        Birth Date: {this.state.user.dob}
+                    </Row>
                     <Row>
                 Email: {this.state.user.email}
                     </Row>
                     <Row>
                 Phone: {this.state.user.phone}
                     </Row>
-                    <Button variant="primary" onClick={this.showModal}>
-                        Update Profile
-                    </Button>
+                    <Row>
+                Address: {this.state.user.street}, {this.state.user.city} {this.state.user.state}, {this.state.user.zip}
+                    </Row>
+                {/*    TODO MODAL GOES HERE*/}
+                <div>
+                    <Modal/>
+                </div>
                 </Col>
             </div>
     </>

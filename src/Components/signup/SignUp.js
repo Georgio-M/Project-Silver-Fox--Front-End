@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Form from "react-bootstrap/Form";
+import InputGroup from "react-bootstrap/InputGroup";
+import FormControl from "react-bootstrap/FormControl";
 
 class SignUp extends Component {
 
@@ -7,10 +12,18 @@ class SignUp extends Component {
         user : {
             firstName: '',
             lastName: '',
-            age: '',
+            dob: '',
             email:'',
             password: '',
             phone: '',
+            street: '',
+            city: '',
+            state: '',
+            zip: '',
+            currentMember: '',
+            memberNumber: ''
+
+
 
 
         }
@@ -54,34 +67,62 @@ class SignUp extends Component {
 
                 <form>
                     <div className="form-row mb-1">
+
                         <div className="col">
-                            <input onChange = {this.handleChange} name = "age" value = {this.state.user.age} type="text" class="form-control" placeholder="age"/>
+                            <input onChange = {this.handleChange} name = "dob" value = {this.state.user.dob} type="date" class="form-control" placeholder="Date of birth"/>
                         </div>
                         <div className="col">
-                            <input onChange = {this.handleChange} name = "password" value = {this.state.user.password} type="text" class="form-control" placeholder="password"/>
+                            <input onChange={this.handleChange} name="phone" value={this.state.user.phone} type="text"
+                                   className="form-control" placeholder="Phone Number"/>
                         </div>
 
                     </div>
                 </form>
-
+<>
                 <form>
                     <div className="form-row mb-3">
+
                         <div className={"col"}>
                             <input onChange={this.handleChange} name="email" value={this.state.user.email}
                                    type="text" className="form-control" placeholder="email"/>
                         </div>
                         <div className="col">
-                            <input onChange={this.handleChange} name="phone"
-                                   value={this.state.user.phone} type="text" className="form-control"
-                                   placeholder="Phone Number"/>
+                            <input onChange={this.handleChange} name="password"
+                                   value={this.state.user.password} type="text" className="form-control"
+                                   placeholder="Password"/>
+                        </div>
+                    </div>
+
+                    <Col>
+                        <Row>
+                        <div className={"col"}>
+                            <input onChange={this.handleChange} name="street" value={this.state.user.street}
+                                   type="text" className="form-control" placeholder="street"/>
+                        </div>
+                            <div className={"col"}>
+                                <input onChange={this.handleChange} name="city" value={this.state.user.city}
+                                       type="text" className="form-control" placeholder="city"/>
+                            </div>
+                            <div className={"col"}>
+                                <input onChange={this.handleChange} name="state" value={this.state.user.state}
+                                       type="text" className="form-control" placeholder="state"/>
+                            </div>
+                        <div className={"col"}>
+                            <input onChange={this.handleChange} name="zip"
+                                   value={this.state.user.zip} type="number" className="form-control"
+                                   placeholder="zip"/>
                         </div>
 
-                    </div>
+                        </Row>
+                    </Col>
+                </form>
+
                     <button onClick={this.handleSubmit} type="button"
                             className="btn btn-secondary btn-lg btn-block">Register
                     </button>
+                    <br/>
 
-                </form>
+    </>
             </div>
 
         );

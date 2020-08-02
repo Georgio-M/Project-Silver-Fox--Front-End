@@ -13,7 +13,7 @@ class Header extends Component {
             lastName: '',
             email: '',
             passWord: '',
-            age: '',
+            admin: '',
             telephone:''
 
         }
@@ -49,7 +49,7 @@ class Header extends Component {
         localStorage.removeItem("loggedInUser");
         this.props.history.push("/home");
     }
-    //TODO TIME PERMITTING CREATE A MODAL FOR THE REGISTRATION PROCESS
+
     modal=() =>{
         const [show, setShow] = useState(false);
         const handleClose = () => setShow(false);
