@@ -111,7 +111,7 @@ class SignUp extends Component {
     <form>
         <div className="form-row mb-3">
             <div className="col">
-                <input onChange={this.handleChange} name="city" value={this.state.user.memberNumber}
+                <input onChange={this.handleChange} name="memberNumber" value={this.state.user.memberNumber}
                        type="text" className="form-control" placeholder="Member Number"/>
             </div>
         </div>

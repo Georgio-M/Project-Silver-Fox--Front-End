@@ -29,7 +29,7 @@ class UpdateUserDetails extends Component {
         Axios.post('http://localhost:8080/updateUser', this.state.user)
             .then(response => {
                 //navigate to the response page
-                this.props.history.push('/test')
+                this.props.history.push('/profile')
             }).catch(error => {
             // display error message to the user
             this.props.history.push('/error')
@@ -117,7 +117,7 @@ class UpdateUserDetails extends Component {
                         <form>
                             <div className="form-row mb-3">
                                 <div className="col">
-                                    <input onChange={this.handleChange} name="city" value={this.state.user.memberNumber}
+                                    <input onChange={this.handleChange} name="memberNumber" value={this.state.user.memberNumber}
                                            type="text" className="form-control" placeholder="Member Number"/>
                                 </div>
                             </div>

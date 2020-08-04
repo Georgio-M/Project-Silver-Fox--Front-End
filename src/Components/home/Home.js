@@ -105,7 +105,7 @@ class Home extends Component {
                             <h2>About Post 4321</h2>
                         </Col>
                         <Col>
-                            <a href={"events"}>
+                            <a href={""}>
                                 <Image src={"./images/events.jpg"} rounded className={"size"}/>
                             </a>
                             <h2>Events</h2>
