@@ -102,12 +102,12 @@ class Home extends Component {
                                 <Image src="./images/postPride.jpg" rounded className={"size"} href={"home"}/>
                             </a>
 
-                            <h2>Contact Post 4321</h2>
+                            <h2>About Post 4321</h2>
                         </Col>
                         <Col>
-                            {/*<a href={"events"}>*/}
-                            {/*    <Image src={"./images/events.jpg"} rounded className={"size"}/>*/}
-                            {/*</a>*/}
+                            <a href={"events"}>
+                                <Image src={"./images/events.jpg"} rounded className={"size"}/>
+                            </a>
                             <h2>Events</h2>
                         </Col>
                     </Row>

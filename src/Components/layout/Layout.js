@@ -15,6 +15,8 @@ import QuestionsModal from "../modal/QuestionsModal";
 import Admin from "../admin/Admin";
 import UpdateUserDetails from "../UpdateUserDetails";
 import AllUsers from "../findAllUsers/AllUsers";
+import AdminUpdateUsers from "../AdminUpdateUsers";
+import AdminAddUsers from "../signup/AdminAddUsers";
 
 class Layout extends Component {
     render() {
@@ -30,7 +32,7 @@ class Layout extends Component {
                 <Route component={ErrorPage} path={"/error"}/>
                 <Route component={Admin} path={"/admin"}/>
                 <Route component={QuestionsModal} path={"/modal"}/>
-                <Route component={UpdateUserDetails} path={"/update"}/>
+                <Route component={Events} path={"/events"}/>
             </div>
         );
 
@@ -45,6 +47,8 @@ class Layout extends Component {
                     <Route component={Profile} path={"/profile"}/>
                     <Route component={UpdateUserDetails} path={"/update"}/>
                     <Route component={ErrorPage} path={"/error"}/>
+                    <Route component={AdminUpdateUsers} path={"/adminupdate"}/>
+                    <Route component={AdminAddUsers} path={"/adminadd"}/>
 
 
                 </div>

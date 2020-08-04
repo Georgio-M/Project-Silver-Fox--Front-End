@@ -260,7 +260,11 @@ code {
     color: white;
     position: relative;
     display: inline-block;
+}
 
+.requiredFields{
+    color: #991A1E;
+    font-size: small;
 }
 
 

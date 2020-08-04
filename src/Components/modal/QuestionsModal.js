@@ -28,16 +28,6 @@ function QuestionsModal(){
                                 <Form.Control type="text" placeholder="Last Name"/>
                             </Form.Group>
                         </Form.Row>
-                        <Form.Row>
-                            <Form.Group as={Col} controlId="formGridEmail">
-                                <Form.Control type="email" placeholder="Email"/>
-                            </Form.Group>
-                            <Form.Group as={Col} controlId="formGridPassword">
-                                <Form.Control type="tel" placeholder="Phone Number"/>
-                            </Form.Group>
-                        </Form.Row>
-
-
                         <div className={"select"}>
                             <Form.Check
                                 type="switch"

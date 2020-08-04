@@ -47,7 +47,7 @@ class AllUsers extends React.Component {
     }
 
     updateUser =() =>{
-        this.props.history.push("/update");
+        this.props.history.push("/adminupdate");
     }
         render() {
 
@@ -62,6 +62,8 @@ class AllUsers extends React.Component {
                                 <th>DOB</th>
                                 <th>Address</th>
                                 <th>Member Number</th>
+                                <th>Status</th>
+                                <th>Admin?</th>
                             </tr>
                             { this.state.user.map((user,index) =>
                                 <tr>
@@ -71,6 +73,8 @@ class AllUsers extends React.Component {
                                     <td>{user.dob}</td>
                                     <td>{user.street} {user.city} {user.state} {user.zip}</td>
                                     <td>{user.memberNumber}</td>
+                                    <td>{user.currentMember}</td>
+                                    <td>{user.admin}</td>
                                     <td>
                                             <Col>
                                                 <Row>

@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import Axios from 'axios';
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
-import FormControl from "react-bootstrap/FormControl";
 
 class SignUp extends Component {
 
@@ -20,7 +17,6 @@ class SignUp extends Component {
             city: '',
             state: '',
             zip: '',
-            currentMember: '',
             memberNumber: ''
         }
     }
@@ -49,7 +45,7 @@ class SignUp extends Component {
     render() {
         return (
             <div className = "container">
-                <h3>Register Below!!</h3>
+                <h3>Stay Connected With Post 4321</h3>
                 <form>
                     <div className="form-row mb-1">
                         <div className="col">
@@ -77,7 +73,7 @@ class SignUp extends Component {
                 </form>
 <>
                 <form>
-                    <div className="form-row mb-3">
+                    <div className="form-row mb-1">
 
                         <div className={"col"}>
                             <input onChange={this.handleChange} name="email" value={this.state.user.email}
@@ -89,30 +85,37 @@ class SignUp extends Component {
                                    placeholder="Password"/>
                         </div>
                     </div>
-
-                    <Col>
-                        <Row>
-                        <div className={"col"}>
-                            <input onChange={this.handleChange} name="street" value={this.state.user.street}
-                                   type="text" className="form-control" placeholder="street"/>
-                        </div>
-                            <div className={"col"}>
-                                <input onChange={this.handleChange} name="city" value={this.state.user.city}
-                                       type="text" className="form-control" placeholder="city"/>
-                            </div>
-                            <div className={"col"}>
-                                <input onChange={this.handleChange} name="state" value={this.state.user.state}
-                                       type="text" className="form-control" placeholder="state"/>
-                            </div>
-                        <div className={"col"}>
-                            <input onChange={this.handleChange} name="zip"
-                                   value={this.state.user.zip} type="number" className="form-control"
-                                   placeholder="zip"/>
-                        </div>
-
-                        </Row>
-                    </Col>
                 </form>
+
+    <form>
+        <div className="form-row mb-1">
+            <div className={"col"}>
+                <input onChange={this.handleChange} name="street" value={this.state.user.street}
+                       type="text" className="form-control" placeholder="street"/>
+            </div>
+            <div className={"col"}>
+                <input onChange={this.handleChange} name="city" value={this.state.user.city}
+                       type="text" className="form-control" placeholder="city"/>
+            </div>
+            <div className={"col"}>
+                <input onChange={this.handleChange} name="state" value={this.state.user.state}
+                       type="text" className="form-control" placeholder="state"/>
+            </div>
+            <div className={"col"}>
+                <input onChange={this.handleChange} name="zip"
+                       value={this.state.user.zip} type="number" className="form-control"
+                       placeholder="zip"/>
+            </div>
+        </div>
+    </form>
+    <form>
+        <div className="form-row mb-3">
+            <div className="col">
+                <input onChange={this.handleChange} name="city" value={this.state.user.memberNumber}
+                       type="text" className="form-control" placeholder="Member Number"/>
+            </div>
+        </div>
+    </form>
 
                     <button onClick={this.handleSubmit} type="button"
                             className="btn btn-secondary btn-lg btn-block">Register

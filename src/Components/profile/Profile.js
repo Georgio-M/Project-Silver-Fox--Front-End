@@ -17,6 +17,10 @@ class Home extends Component {
         this.props.history.push("/update");
     }
 
+    contactUs =() =>{
+        this.props.history.push("/contactus");
+    }
+
     componentDidMount(){
         const params= {
             email: localStorage.getItem("loggedInUser")
@@ -57,16 +61,18 @@ class Home extends Component {
                     <Row>
                 Address: {this.state.user.street}, {this.state.user.city} {this.state.user.state}, {this.state.user.zip}
                     </Row>
+                    <br/>
 
                 {/*    TODO MODAL GOES HERE*/}
                 <div>
                     <Row>
                         <button onClick={this.updateData}>Update My Personal Info</button>
+                    <button onClick={this.contactUs}>About Post 4321</button>
                     </Row>
-                    <QuestionsModal/>
                 </div>
                 </Col>
             </div>
+    <br/>
     </>
 
         );

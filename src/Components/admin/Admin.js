@@ -5,6 +5,9 @@ class Admin extends Component {
     home =() =>{
         this.props.history.push("/test");
     }
+    addMember =() =>{
+        this.props.history.push("/adminadd");
+    }
 
     render() {
         return (
@@ -12,10 +15,14 @@ class Admin extends Component {
                     <form>
                         <div className="form-row mb-3">
                             <div>
-                                <button onClick={this.home}> Users</button>
+                                <button onClick={this.home}> Current Users</button>
                             </div>
                             <div>
-                                <button >Email</button>
+                                <button onClick={this.addMember}> Add Users</button>
+                            </div>
+
+                            <div>
+                                <button >Contact Users</button>
                             </div>
                         </div>
                     </form>

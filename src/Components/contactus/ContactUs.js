@@ -16,7 +16,7 @@ class ContactUs extends Component {
                     <img src="./images/banner2.jpg" fluid alt={"contact us"} className={"home-image"}/>
                 </div>
                 <div>
-                    <h1 className={"contactus-header"}>Contact Post 4321</h1>
+                    <h1 className={"contactus-header"}>VFW Post 4321</h1>
                 </div>
 
                 <div className={"row"}>
