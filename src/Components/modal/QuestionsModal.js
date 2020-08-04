@@ -7,13 +7,14 @@ import Axios from "axios";
 
 
 
-function Modal(){
+function QuestionsModal(){
     const [isOpen, setIsOpen]= useState(false)
+
 
 
     return(
         <div>
-            <button onClick={()=> setIsOpen(! isOpen)}>Update Info</button>
+            <button onClick={()=> setIsOpen(! isOpen)}>Have a question?</button>
             {isOpen ? (
                 <div>
 
@@ -35,9 +36,7 @@ function Modal(){
                                 <Form.Control type="tel" placeholder="Phone Number"/>
                             </Form.Group>
                         </Form.Row>
-                        <Form.Group controlId="exampleForm.ControlTextarea1">
-                            <Form.Control as="textarea" rows="3" placeholder={"How Can Post 4321 Help You?"}/>
-                        </Form.Group>
+
 
                         <div className={"select"}>
                             <Form.Check
@@ -58,7 +57,7 @@ function Modal(){
                             `}
                         </style>
                         <Button variant="color" size="lg" block>
-                            Contact Us
+                            Update Profile
                         </Button>
                     </Form>
 
@@ -68,4 +67,4 @@ function Modal(){
 
     )
 }
-export default Modal;
+export default QuestionsModal;

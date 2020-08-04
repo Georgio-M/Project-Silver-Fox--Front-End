@@ -11,7 +11,10 @@ import ThankYou from "../thankyou/ThankYou";
 import ErrorPage from "../thankyou/ErrorPage";
 import Profile from "../profile/Profile";
 import {withRouter} from "react-router";
-import Modal from "../modal/Modal";
+import QuestionsModal from "../modal/QuestionsModal";
+import Admin from "../admin/Admin";
+import UpdateUserDetails from "../UpdateUserDetails";
+import AllUsers from "../findAllUsers/AllUsers";
 
 class Layout extends Component {
     render() {
@@ -21,24 +24,28 @@ class Layout extends Component {
                 <Route component={Home} path="/" exact/>
                 <Route component={Home} path={"/home"}/>
                 <Route component={SignUp} path={"/register"}/>
-                <Route component={Events} path={"/events"}/>
                 <Route component={About} path={"/about"}/>
                 <Route component={ContactUs} path={"/contactus"}/>
                 <Route component={ThankYou} path={"/thankyou"}/>
                 <Route component={ErrorPage} path={"/error"}/>
-                <Route component={Modal} path={"/test"}/>
+                <Route component={Admin} path={"/admin"}/>
+                <Route component={QuestionsModal} path={"/modal"}/>
+                <Route component={UpdateUserDetails} path={"/update"}/>
             </div>
         );
 
         if(localStorage.getItem("loggedInUser")){
             routes = (
                 <div>
+                    <Route component={Admin} path={"/admin"}/>
                     <Route component = {Home} path = "/home" />
                     <Route component={Events} path={"/events"}/>
-                    <Route component={About} path={"/about"}/>
                     <Route component={ContactUs} path={"/contactus"}/>
-                    <Route component={Modal} path={"/test"}/>
+                    <Route component={AllUsers} path={"/test"}/>
                     <Route component={Profile} path={"/profile"}/>
+                    <Route component={UpdateUserDetails} path={"/update"}/>
+                    <Route component={ErrorPage} path={"/error"}/>
+
 
                 </div>
             );

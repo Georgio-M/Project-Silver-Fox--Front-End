@@ -5,6 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import {Col} from "react-bootstrap";
 import Row from "react-bootstrap/Row";
+import QuestionsModal from "../modal/QuestionsModal";
 
 class Header extends Component {
     state = {
@@ -23,6 +24,7 @@ class Header extends Component {
             .then(response => {
                 //store data
                 localStorage.setItem("loggedInUser", response.data.email);
+                localStorage.setItem("admin", response.data.admin);
                 this.props.history.push("/profile")
             }).catch(error => {console.log(error)});
     }
@@ -44,16 +46,15 @@ class Header extends Component {
         this.props.history.push("/profile");
     }
 
+    admin =() =>{
+        this.props.history.push("/admin");
+    }
+
+
 
     signOut =() =>{
         localStorage.removeItem("loggedInUser");
         this.props.history.push("/home");
-    }
-
-    modal=() =>{
-        const [show, setShow] = useState(false);
-        const handleClose = () => setShow(false);
-        const handleShow = () => setShow(true);
     }
 
 
@@ -78,26 +79,31 @@ class Header extends Component {
             </form>
         );
 
-        if(localStorage.getItem("loggedInUser")){
+        if(localStorage.getItem("loggedInUser") && localStorage.getItem("admin")==="Y"){
             signInSignOut =(
                 <div>
                     <Col>
                         <Row>
                 <button onClick ={this.signOut} className="btn-outline-success" type="button">Sign Out</button>
                             <button onClick={this.home}>My Profile</button>
+                            <button onClick={this.admin}>Admin Options</button>
                         </Row>
                     </Col>
                 </div>
-
             );
-            Links =(
-                <li className="nav-item active">
-                    <Link className="nav-link" to="settings">Settings <span className="sr-only">(current)</span></Link>
-                </li>
-            )
+
+        }else if(localStorage.getItem("loggedInUser")){
+            signInSignOut =(
+                <div>
+                    <Col>
+                        <Row>
+                            <button onClick ={this.signOut} className="btn-outline-success" type="button">Sign Out</button>
+                            <button onClick={this.home}>My Profile</button>
+                        </Row>
+                    </Col>
+                </div>
+            );
         }
-
-
 
         return (
             <div>
@@ -126,7 +132,7 @@ class Header extends Component {
                                 <Nav.Link href={"/about"} className={"header-color-text"}>About</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href={"/events"} className={"header-color-text"}>Events</Nav.Link>
+                                {/*<Nav.Link href={"/events"} className={"header-color-text"}>Events</Nav.Link>*/}
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link href={"/contactus"} className={"header-color-text"}>Contact Us</Nav.Link>

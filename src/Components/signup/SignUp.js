@@ -22,15 +22,12 @@ class SignUp extends Component {
             zip: '',
             currentMember: '',
             memberNumber: ''
-
-
-
-
         }
     }
 
     handleSubmit = ()=>{
-        Axios.post('http://localhost:8080/submitUserDetails', this.state.user).then(response => {
+        Axios.post('http://localhost:8080/submitUserDetails', this.state.user)
+            .then(response => {
             //navigate to the response page
             this.props.history.push('/thankyou')
         }).catch(error => {

@@ -3,21 +3,18 @@ import {Link, Route} from 'react-router-dom';
 import  Axios  from 'axios';
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Modal from "../modal/Modal";
-
-
-
-
+import QuestionsModal from "../modal/QuestionsModal";
 
 
 class Home extends Component {
+
 
     state = {
         user: {}
     }
 
     updateData =() =>{
-        this.props.history.push("/test");
+        this.props.history.push("/update");
     }
 
     componentDidMount(){
@@ -35,12 +32,14 @@ class Home extends Component {
     }
 
     render() {
-
         return (
+
 <>
                             <div>
                                 <h1 className="h2">Hey {this.state.user.firstName}</h1>
                             </div>
+
+
             <div>
                 <Col>
                     <Row>
@@ -58,9 +57,13 @@ class Home extends Component {
                     <Row>
                 Address: {this.state.user.street}, {this.state.user.city} {this.state.user.state}, {this.state.user.zip}
                     </Row>
+
                 {/*    TODO MODAL GOES HERE*/}
                 <div>
-                    <Modal/>
+                    <Row>
+                        <button onClick={this.updateData}>Update My Personal Info</button>
+                    </Row>
+                    <QuestionsModal/>
                 </div>
                 </Col>
             </div>
